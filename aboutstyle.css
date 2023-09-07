@@ -1,0 +1,58 @@
+.*{
+    margin: 0;
+}
+.top_content{
+   padding-left: 1vw;
+    background: url("aboutUSTop.jpg");
+    height: 20vh;
+    width:auto;
+    background-size:contain;
+    /* background-repeat: no-repeat; */
+}
+.middle_content{
+    margin-top: 10;
+    display:flex;
+    font-family: fangsong;
+
+    /* justify-items: center; */
+    justify-content: center;
+    height: auto;
+    /* width: 20vw; */
+    /* border: 2px solid red; */
+ 
+ 
+}
+.flex_content{
+    height: auto;
+    width: 50vw;
+    font-family: ui-monospace;;
+     /* border: 2px solid red; */
+     /* color: azure; */
+}
+.flex_content1{
+    height: 35vh;
+    width: 20vw;
+    border: 2px solid black;
+     /* border: 2px solid red; */
+     padding: 10;
+     background-color:rgb(160, 141, 155);
+     color: azure;
+     border-radius:10% ;
+
+}
+.bottom_content{
+    margin-top: 40;
+    display:flex;
+    padding: 20;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin-left: 10;
+    margin-right: 10;
+    background-color: azure;
+    margin-bottom: 0;
+}
+
+footer{
+    position: relative;
+}

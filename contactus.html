@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Contact us Page</title>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <!-- <script>
+            function sendEmail()
+            {
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "sidvarangaoankar5@gmail.com",
+                    Password : "siddharth2002",
+                    To : 'sidvarangaonkar5@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Regarding enquiry",
+                    Body : "And this is the body"
+                }).then(
+                  message => alert(message)
+                );
+            }
+        </script> -->
+        <script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+	function sendEmail() {
+	Email.send({
+		Host: "smtp.elasticemail.com",
+        SecureToken :"cc1d134c-5574-4603-8128-9d94304b580d",
+        Username:"sidvarangaonkar5@gmail.com",
+        Password:"9716F0F92CF076D13EDF7522A42465871C6E",
+		To: 'sidvarangaonkar5@gmail.com',
+		From: document.getElementById("email").value,
+		Subject: "Regarding enquiry about your tour plans",
+		Body:document.getElementById("bodycontent").value,
+	})
+    .then( message => alert(message)
+    );
+	}
+</script>
+    </head>
+    <body>
+        <header>
+            <div class="topMenu">
+                
+                <nav >
+                    <ul class="a">
+                        <a href="aboutUs.html">
+                            <li>About us</li>
+                            <a href="service.html ">
+                           <li>Services</li></a>
+                            <a href="price.html">
+                            <li>Price</li></a>
+                            <a href="contactUs.html">
+                            <li>Contact us</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="sid">
+        <div class="Top">
+            <h1 style="font-family: fantasy; padding-top:20px; padding-bottom:20px">How can we help</h1>
+            
+        </div>
+        <div class="content">
+            
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3 style="text-align:center">Get in touch</h3>
+                <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                <input type="email" name="email" id="email" placeholder="Enter email" required>
+                <input type="text" id="phone" placeholder="Phone no" required>
+                <textarea id="bodycontent" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+           </form>
+   
+
+        </div>
+    </div>
+        <div class="icon">
+            <div class="flex_cont">
+        <a href="tel:9826223207" target="_blank"><img src="call.png"></img></a>
+        <p>9826223207</p>
+
+       
+        </div>
+        <div class="flex_cont">
+            <a href="mailto:sidvarangaoankar5@gamil.com" target="_blank"><img src="mail.png"></img></a>
+            <p>sidvarangaonkar5@gmail.com</p>
+    
+          
+            </div>
+            <div class="flex_cont"> 
+                <a href="https://www.google.com/maps/place/Shankar+Kalat+Nagar,+Wakad,+Pimpri-Chinchwad,+Maharashtra+411057/@18.5988856,73.7612535,15z/data=!3m1!4b1!4m6!3m5!1s0x3bc2b970527b7b09:0x3b5672cf4652eb60!8m2!3d18.5993483!4d73.762495!16s%2Fg%2F11gzr49r5"  target="_blank"><img src="location.png"></img></a>
+                <p>Exyz Wakad Pune,<br>Near post Office</p>
+        
+                
+                </div>
+        </div>
+        <footer>
+            <p>©Siddharth Varangaonkar</p>
+        </footer>
+   
+        
+    </body>
+</html>

@@ -1,0 +1,39 @@
+.flex_content1{
+    height: Auto;
+    width: 20vw;
+    margin-top: 50;
+    border: 2px solid black;
+     /* border: 2px solid red; */
+     padding: 20;
+     background-color:beige;
+     border-radius:4%;
+     font-family:  sans-serif;
+
+}
+.bottom_content{
+    /* margin-top: 40; */
+    display:flex;
+    padding: 20;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin-left: 10;
+    margin-right: 10;
+    /* background-color: azure; */
+    margin-bottom: 0;
+    /* padding-bottom: 100; */
+}
+
+.service_back{
+    margin-top: 0;
+    background-image: url("serviceback.jpg");
+    height: 100vh;
+    /* height: fit-content; */
+}
+
+.desc{
+    padding-top: 60;
+    text-align: center;
+    color: rgb(49, 28, 134);
+    font-family: Georgia, serif;
+}
